@@ -1,0 +1,104 @@
+{
+  "projectType": "saas",
+  "projectName": "Plataforma GDS",
+  "projectDescription": "Modular platform for managing social development programs, beneficiaries, events, and citizen participation for municipal government services.",
+  "theme": "linden",
+  "primaryColor": "#2563eb",
+  "lightColor": "#3b82f6",
+  "darkColor": "#1e40af",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "introduction",
+              "architecture",
+              "installation"
+            ]
+          },
+          {
+            "group": "Frontend Modules",
+            "pages": [
+              "modules/plataforma-gds",
+              "modules/admin",
+              "modules/beneficiarios",
+              "modules/programas",
+              "modules/eventos",
+              "modules/control-asistencia",
+              "modules/participacion-ciudadana"
+            ]
+          },
+          {
+            "group": "Development",
+            "pages": [
+              "development/environment-variables",
+              "development/build-and-deploy",
+              "development/components",
+              "development/authentication"
+            ]
+          },
+          {
+            "group": "Configuration",
+            "pages": [
+              "configuration/api-setup",
+              "configuration/database",
+              "configuration/jwt-security"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "api/overview",
+              "api/authentication"
+            ]
+          },
+          {
+            "group": "Endpoints",
+            "pages": [
+              "api/admin",
+              "api/beneficiarios",
+              "api/programas",
+              "api/eventos",
+              "api/participacion-ciudadana",
+              "api/globales"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Modular architecture with multiple Vue 3 frontend applications",
+    "Role-based access control with JWT authentication",
+    "Beneficiary management system for social programs",
+    "Event scheduling and attendance tracking",
+    "Citizen participation and course registration",
+    "Administrative dashboard with user and permission management",
+    "Laravel REST API with Oracle database support",
+    "Reusable component library with Tailwind CSS"
+  ],
+  "publicApiSurface": [
+    "POST /api/login - User authentication",
+    "GET /api/admin/usuarios - User management",
+    "GET /api/admin/roles - Role management",
+    "GET /api/admin/permisos - Permission management",
+    "GET /api/beneficiarios - Beneficiary listing",
+    "POST /api/beneficiarios - Create beneficiary",
+    "GET /api/programas - Programs management",
+    "GET /api/programas/actividades - Activity management",
+    "GET /api/eventos - Events listing",
+    "GET /api/control-asistencia - Attendance tracking",
+    "GET /api/participacion-ciudadana/cursos - Course management",
+    "POST /api/participacion-ciudadana/inscripcion - Course enrollment",
+    "GET /api/globales/catalogos - Global catalogs",
+    "POST /api/globales/export - Data export functionality"
+  ]
+}
